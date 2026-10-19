@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-tx="pantalla-titulo">Inicio – Colegio Privado IPSEL</title>
+  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+    content="Colegio Privado IPSEL – Instituto Privado Secundario Latinoamericano. Secundario de 5 años con orientación en Informática.">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/inicio/hero.css">
+  <link rel="stylesheet" href="css/pages/inicio/inicio.css">
+  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/inicio.data.js -->
+  <link rel="stylesheet" href="css/pages/inicio/tipografia.css">
+
+  <noscript>
+    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+    <style>
+      @media (max-width: 63.99em) {
+        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+        .nav { flex-basis: 100%; }
+        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+        .nav__link { padding: var(--space-2) 0; }
+        .nav__toggle { display: none; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== HEADER (compartido): no modificar sin PR aprobado por el responsable ===== -->
+  <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html" aria-current="page">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main id="contenido">
+    <aside class="tx-aviso container card" role="note" data-tx="aviso">Contenido de demostración: todos los textos y datos son ilustrativos y no representan información institucional confirmada.</aside>
+
+    <!-- ===== BLOQUE: Hero y estadísticas | GRUPO 1 (css/pages/inicio/hero.css) ===== -->
+    <section class="hero surface-dark" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+        <div>
+          <span class="badge"><span class="badge__dot badge__dot--ok" aria-hidden="true"></span><span data-tx="hero-badge" class="tx-hero-badge">[Inscripciones abiertas: confirmar con la institución]</span></span>
+          <h1 class="tx-hero-titulo hero__title" id="hero-titulo" data-tx="hero-titulo"><span class="hero__title-light">Instituto Privado</span><br>
+Secundario <span class="hero__title-accent">Latinoamericano</span></h1>
+          <p class="tx-hero-lead hero__lead" data-tx="hero-lead">Secundario de 5 años con orientación en Informática. [Texto de presentación validado por la institución.]</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="contacto.html#inscripciones" data-tx="hero-cta-inscripciones">Inscripciones</a>
+            <a class="btn btn--ghost" href="plan-estudios.html" data-tx="hero-cta-plan">Ver plan de estudios</a>
+          </div>
+          <div class="stats hero__stats">
+            <!-- Agregar datos reales validados (no inventar cifras). Editar js/data/inicio.data.js -->
+            <!-- build:inicio-stats -->
+            <div>
+              <p class="stat__value">5</p>
+              <p class="stat__label">Años de cursado</p>
+            </div>
+            <div>
+              <p class="stat__value">Informática</p>
+              <p class="stat__label">Orientación</p>
+            </div>
+            <!-- /build:inicio-stats -->
+          </div>
+        </div>
+        <div class="hero__panel" aria-hidden="true">
+          <!-- Reemplazar por: <img src="img/inicio/hero.webp" alt="[descripción real]" width="800" height="1000"> (≤ 300 KB) -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN BLOQUE: Hero ===== -->
+
+    <!-- ===== BLOQUE: Propuesta | GRUPO 2 ===== -->
+    <section class="section surface-light" aria-labelledby="propuesta-titulo">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-propuesta-eyebrow eyebrow eyebrow--line" data-tx="propuesta-eyebrow">Nuestra propuesta</span>
+            <h2 id="propuesta-titulo" data-tx="propuesta-titulo" class="tx-propuesta-titulo">Un secundario con orientación en Informática</h2>
+          </div>
+          <p class="tx-propuesta-lead section__lead" data-tx="propuesta-lead">[Resumen de la propuesta educativa, validado por la institución.]</p>
+        </div>
+        <div class="grid grid--3 propuesta-grid">
+          <!-- build:inicio-propuesta -->
+          <article class="card card--elevated">
+            <h3>Nivel secundario</h3>
+            <p class="card__text">5 años de cursado.</p>
+            <a class="link-arrow" href="plan-estudios.html">Ver plan de estudios <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="card card--elevated">
+            <h3>Orientación en Informática</h3>
+            <p class="card__text">[Descripción real de la orientación.]</p>
+          </article>
+          <article class="card card--brand card--elevated">
+            <span class="card__label">Turnos e inscripciones</span>
+            <h3>[Dato real]</h3>
+            <p class="card__text">[Completar con información de la institución.]</p>
+          </article>
+          <!-- /build:inicio-propuesta -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN BLOQUE: Propuesta ===== -->
+
+    <!-- ===== BLOQUE: Pilares institucionales | GRUPO 2 ===== -->
+    <section class="section surface-alt" aria-labelledby="pilares-titulo">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-pilares-eyebrow eyebrow eyebrow--line" data-tx="pilares-eyebrow">Institucional</span>
+            <h2 id="pilares-titulo" data-tx="pilares-titulo" class="tx-pilares-titulo">[Pilares según el proyecto institucional]</h2>
+          </div>
+          <a class="link-arrow" href="institucional.html"><span data-tx="pilares-link" class="tx-pilares-link">Conocer más</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="grid grid--3 pilares-grid">
+          <!-- build:inicio-pilares -->
+          <article class="card card--elevated card--accent pilar-card">
+            <span class="pilar-card__index" aria-hidden="true">01</span>
+            <h3>[Pilar 1]</h3>
+            <p class="card__text">[Descripción]</p>
+          </article>
+          <article class="card card--elevated card--accent pilar-card">
+            <span class="pilar-card__index" aria-hidden="true">02</span>
+            <h3>[Pilar 2]</h3>
+            <p class="card__text">[Descripción]</p>
+          </article>
+          <article class="card card--elevated card--accent pilar-card">
+            <span class="pilar-card__index" aria-hidden="true">03</span>
+            <h3>[Pilar 3]</h3>
+            <p class="card__text">[Descripción]</p>
+          </article>
+          <!-- /build:inicio-pilares -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN BLOQUE: Pilares ===== -->
+
+    <!-- ===== BLOQUE: Experiencias (adelanto) | GRUPO 3 ===== -->
+    <section class="section surface-dark section--glow" aria-labelledby="exp-titulo">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-experiencias-eyebrow eyebrow eyebrow--line" data-tx="experiencias-eyebrow">Experiencias</span>
+            <h2 id="exp-titulo" data-tx="experiencias-titulo" class="tx-experiencias-titulo">La comunidad IPSEL</h2>
+          </div>
+          <a class="link-arrow" href="experiencias.html"><span data-tx="experiencias-link" class="tx-experiencias-link">Ver más</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="grid grid--3 comunidad-grid">
+          <!-- Solo con autorización firmada de madre/padre/tutor; sin datos personales de menores -->
+          <!-- build:inicio-testimonio -->
+          <figure class="testimonial testimonial--compact">
+            <blockquote class="testimonial__quote">[Testimonio autorizado]</blockquote>
+            <figcaption class="testimonial__author"><span class="avatar" aria-hidden="true">[IN]</span><span class="testimonial__name">[Nombre autorizado o “Comunidad IPSEL”]</span></figcaption>
+          </figure>
+          <!-- /build:inicio-testimonio -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN BLOQUE: Experiencias ===== -->
+
+    <!-- ===== BLOQUE: Noticias (adelanto) | GRUPO 3 ===== -->
+    <section class="section surface-light" aria-labelledby="noticias-titulo">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-noticias-eyebrow eyebrow eyebrow--line" data-tx="noticias-eyebrow">Noticias</span>
+            <h2 id="noticias-titulo" data-tx="noticias-titulo" class="tx-noticias-titulo">Novedades del colegio</h2>
+          </div>
+          <a class="link-arrow" href="noticias.html"><span data-tx="noticias-link" class="tx-noticias-link">Ver todas</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="grid grid--3 noticias-grid">
+          <!-- Se generan las noticias más recientes desde js/data/noticias.data.js -->
+          <!-- build:inicio-noticias -->
+          <article class="news-card">
+            <div class="news-card__media">
+              <span class="news-card__date">12 oct</span>
+            </div>
+            <div class="news-card__body">
+              <span class="caption">Institucional</span>
+              <h3 class="news-card__title"><a class="news-card__link" href="noticias.html#noticia-1">Título de Noticia 1</a></h3>
+              <p class="news-card__text">Una actualización institucional con información relevante para toda la comunidad educativa.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card__media">
+              <span class="news-card__date">08 oct</span>
+            </div>
+            <div class="news-card__body">
+              <span class="caption">Comunicados</span>
+              <h3 class="news-card__title"><a class="news-card__link" href="noticias.html#noticia-2">Título de Noticia 2</a></h3>
+              <p class="news-card__text">Información y avisos importantes para estudiantes y familias.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card__media">
+              <span class="news-card__date">03 oct</span>
+            </div>
+            <div class="news-card__body">
+              <span class="caption">Eventos</span>
+              <h3 class="news-card__title"><a class="news-card__link" href="noticias.html#noticia-3">Título de Noticia 3</a></h3>
+              <p class="news-card__text">Conocé las próximas actividades, encuentros y propuestas institucionales.</p>
+            </div>
+          </article>
+          <!-- /build:inicio-noticias -->
+        </div>
+      </div>
+    </section>
+    <!-- ===== FIN BLOQUE: Noticias ===== -->
+
+  </main>
+
+  <!-- ===== FOOTER (compartido): no modificar sin PR aprobado por el responsable ===== -->
+  <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

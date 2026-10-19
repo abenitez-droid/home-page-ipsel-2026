@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+        content="Noticias de demostración para la maqueta del sitio IPSEL.">
+    <title data-tx="pantalla-titulo">IPSEL | Noticias</title>
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/noticias/noticias.css">
+    <!-- Tipografía de los textos de esta pantalla: generada desde js/data/noticias.data.js -->
+    <link rel="stylesheet" href="css/pages/noticias/tipografia.css">
+    <noscript>
+      <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+      <style>
+        @media (max-width: 63.99em) {
+          .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+          .nav { flex-basis: 100%; }
+          .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+          .nav__link { padding: var(--space-2) 0; }
+          .nav__toggle { display: none; }
+        }
+      </style>
+    </noscript>
+    <script src="js/main.js" defer></script>
+    <script src="js/data/noticias.data.js" defer></script>
+    <script src="js/pages/noticias/noticias.js" defer></script>
+</head>
+
+<body class="surface-alt">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html" aria-current="page">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="container news-page" id="contenido">
+        <aside class="tx-aviso card" role="note" data-tx="aviso">Contenido de demostración: estas noticias, fechas y categorías son ficticias y no describen hechos institucionales.</aside>
+        <header class="page-heading"><span class="tx-encabezado-eyebrow eyebrow eyebrow--line" data-tx="encabezado-eyebrow">Actualidad institucional</span>
+            <h1 data-tx="encabezado-titulo" class="tx-encabezado-titulo">Página interna — Noticias</h1>
+            <p data-tx="encabezado-lead" class="tx-encabezado-lead">Listado y detalle de noticias de la institución.</p>
+        </header>
+        <div class="news-layout">
+            <section class="news-list-panel" id="listado" aria-labelledby="list-title">
+                <div class="section-heading">
+                    <div><span class="tx-listado-eyebrow eyebrow" data-tx="listado-eyebrow">Novedades</span>
+                        <h2 id="list-title" data-tx="listado-titulo">Listado de noticias</h2>
+                    </div><span class="result-count" id="result-count" data-tx="listado-count">6 noticias</span>
+                </div>
+                <form class="filters card" id="filters-form">
+                    <div class="filters__heading">
+                        <h3 data-tx="filtros-titulo">Filtros</h3><button class="text-button" id="reset-filters" type="button" data-tx="filtros-limpiar">Limpiar</button>
+                    </div>
+                    <div class="field"><label class="tx-filtro-categoria-label field__label" for="category-filter" data-tx="filtro-categoria-label">Categoría</label><select
+                            class="field__control" id="category-filter">
+                            <option value="all" data-tx="filtro-categoria-todas">Todas las categorías</option>
+                            <!-- build:noticias-tipos -->
+                            <option>Institucional</option>
+                            <option>Comunicados</option>
+                            <option>Eventos</option>
+                            <option>Comunidad</option>
+                            <!-- /build:noticias-tipos -->
+                        </select></div>
+                    <div class="field"><label class="tx-filtro-fecha-label field__label" for="date-filter" data-tx="filtro-fecha-label">Fecha</label><select
+                            class="field__control" id="date-filter">
+                            <option value="all" data-tx="filtro-fecha-todas">Todas las fechas</option>
+                            <!-- build:noticias-meses -->
+                            <option value="2024-10">Octubre 2024</option>
+                            <option value="2024-09">Septiembre 2024</option>
+                            <option value="2024-08">Agosto 2024</option>
+                            <!-- /build:noticias-meses -->
+                        </select></div>
+                    <div class="field"><label class="tx-filtro-buscar-label field__label" for="search-news" data-tx="filtro-buscar-label">Buscar</label><input
+                            class="field__control" id="search-news" type="search" data-tx="filtro-buscar-placeholder"
+                            data-tx-attr="placeholder" placeholder="Título o palabra clave…"
+                            autocomplete="off"></div>
+                </form>
+                <p class="filter-status" id="filter-status" aria-live="polite"></p>
+                <div class="news-list" id="news-list"></div>
+                <nav class="pagination" aria-label="Paginación" data-tx="paginacion-etiqueta" data-tx-attr="aria-label"><button class="pagination__button" id="previous-page"
+                        type="button" data-tx="pagina-anterior">‹ Anterior</button>
+                    <div class="pagination__pages" id="pagination-pages"></div><button class="pagination__button"
+                        id="next-page" type="button" data-tx="pagina-siguiente">Siguiente ›</button>
+                </nav>
+            </section>
+            <article class="news-detail-panel" id="news-detail" aria-labelledby="detail-title">
+                <p id="detail-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+                <div class="section-heading">
+                    <div><span class="tx-detalle-eyebrow eyebrow" data-tx="detalle-eyebrow">Noticia seleccionada</span>
+                        <h2 data-tx="detalle-seccion-titulo">Detalle de noticia</h2>
+                    </div>
+                </div>
+                <div class="detail-card card">
+                    <div class="detail-hero" id="detail-hero" role="img" data-tx="detalle-hero-aria"
+                        data-tx-attr="aria-label" aria-label="Imagen principal de la noticia">
+                        <span class="detail-hero__placeholder" data-tx="detalle-hero">Imagen principal</span>
+                    </div>
+                    <div class="detail-body"><span class="badge" id="detail-category" data-tx="detalle-categoria">Institucional</span>
+                        <h2 id="detail-title" tabindex="-1" data-tx="detalle-titulo">Título de la noticia seleccionada</h2>
+                        <p class="detail-meta" id="detail-meta"></p>
+                        <div class="share-row"><span data-tx="detalle-compartir">Compartir:</span><button class="share-button" id="share-facebook"
+                                type="button" data-tx="detalle-compartir-facebook" data-tx-attr="aria-label" aria-label="Compartir en Facebook">f</button><button class="share-button"
+                                id="share-x" type="button" data-tx="detalle-compartir-x" data-tx-attr="aria-label" aria-label="Compartir en X">𝕏</button><button
+                                class="share-button" id="copy-link" type="button" data-tx="detalle-compartir-copiar"
+                                data-tx-attr="aria-label" aria-label="Copiar enlace">↗</button><span id="share-feedback" class="share-feedback"
+                                aria-live="polite"></span></div>
+                        <div class="article-content">
+                            <h3 data-tx="detalle-contenido-titulo">Contenido</h3>
+                            <div id="detail-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <section class="related-section" id="relacionadas" aria-labelledby="related-title">
+                    <div class="section-heading">
+                        <div><span class="tx-relacionadas-eyebrow eyebrow" data-tx="relacionadas-eyebrow">Seguí leyendo</span>
+                            <h2 id="related-title" data-tx="relacionadas-titulo">Noticias relacionadas</h2>
+                        </div>
+                    </div>
+                    <div class="related-grid" id="related-news"></div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-tx="pantalla-titulo">Institucional | IPSEL</title>
+  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+    content="Información institucional de demostración para la maqueta de IPSEL.">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/institucional/institucional.css">
+  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/institucional.data.js -->
+  <link rel="stylesheet" href="css/pages/institucional/tipografia.css">
+  <noscript>
+    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+    <style>
+      @media (max-width: 63.99em) {
+        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+        .nav { flex-basis: 100%; }
+        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+        .nav__link { padding: var(--space-2) 0; }
+        .nav__toggle { display: none; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html" aria-current="page">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main id="contenido">
+    <aside class="tx-aviso container card" role="note" data-tx="aviso">Contenido de demostración: los textos de esta página son ejemplos y no describen la historia, organización ni autoridades reales del colegio.</aside>
+
+    <section class="section surface-light" id="historia" aria-labelledby="page-title">
+      <div class="container">
+        <div class="institucional-intro">
+          <div class="stack">
+            <span class="tx-historia-eyebrow eyebrow eyebrow--line" data-tx="historia-eyebrow">Institucional · ejemplo</span>
+            <h1 id="page-title" data-tx="historia-titulo" class="tx-historia-titulo">Conocé nuestra institución</h1>
+            <p data-tx="historia-lead" class="tx-historia-lead">Este espacio presenta la historia y la identidad del colegio. Los textos definitivos se publican cuando la institución los valide y autorice.</p>
+            <a class="link-arrow" href="#autoridades"><span data-tx="historia-link" class="tx-historia-link">Ver autoridades</span> <span aria-hidden="true">→</span></a>
+          </div>
+          <dl class="fact-list">
+            <!-- build:inst-facts -->
+            <div>
+              <dt>Nombre</dt>
+              <dd>Colegio Privado IPSEL</dd>
+            </div>
+            <div>
+              <dt>Nivel</dt>
+              <dd>Secundario · 5 años</dd>
+            </div>
+            <div>
+              <dt>Orientación</dt>
+              <dd>Informática</dd>
+            </div>
+            <div>
+              <dt>Fundación</dt>
+              <dd>[Año pendiente de confirmación]</dd>
+            </div>
+            <!-- /build:inst-facts -->
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-alt" id="mision" aria-labelledby="mission-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-trayectoria-eyebrow eyebrow eyebrow--line" data-tx="trayectoria-eyebrow">Proyecto institucional · ejemplo</span>
+            <h2 id="mission-title" data-tx="trayectoria-titulo" class="tx-trayectoria-titulo">Nuestra trayectoria</h2>
+          </div>
+          <p class="tx-trayectoria-lead section__lead" data-tx="trayectoria-lead">Hitos de la historia del colegio, pendientes de validación institucional.</p>
+        </div>
+        <ol class="timeline">
+          <!-- build:inst-hitos -->
+          <li class="timeline__item"><span class="timeline__year">[Año]</span>
+            <p>[Hito fundacional de la institución, pendiente de confirmación.]</p>
+          </li>
+          <li class="timeline__item"><span class="timeline__year">[Año]</span>
+            <p>[Incorporación de la orientación en Informática, pendiente de confirmación.]</p>
+          </li>
+          <li class="timeline__item"><span class="timeline__year">[Año]</span>
+            <p>[Hito institucional reciente, pendiente de confirmación.]</p>
+          </li>
+          <!-- /build:inst-hitos -->
+        </ol>
+      </div>
+    </section>
+
+    <section class="section surface-light" aria-labelledby="mv-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-identidad-eyebrow eyebrow eyebrow--line" data-tx="identidad-eyebrow">Identidad · ejemplo</span>
+            <h2 id="mv-title" data-tx="identidad-titulo" class="tx-identidad-titulo">Misión y visión</h2>
+          </div>
+        </div>
+        <div class="grid grid--2">
+          <!-- build:inst-mv -->
+          <article class="card card--elevated">
+            <h3>Misión de ejemplo</h3>
+            <p class="card__text">Acompañar la formación mediante experiencias de aprendizaje, participación y desarrollo de conocimientos. Texto ilustrativo pendiente de validación institucional.</p>
+          </article>
+          <article class="card card--elevated">
+            <h3>Visión de ejemplo</h3>
+            <p class="card__text">Construir una comunidad educativa que promueva el aprendizaje continuo y la colaboración. Texto ilustrativo, no es una declaración oficial.</p>
+          </article>
+          <!-- /build:inst-mv -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-alt" id="valores" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-valores-eyebrow eyebrow eyebrow--line" data-tx="valores-eyebrow">Principios · ejemplo</span>
+            <h2 id="values-title" data-tx="valores-titulo" class="tx-valores-titulo">Valores de muestra</h2>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <!-- build:inst-valores -->
+          <article class="card card--elevated card--accent value-card">
+            <span class="icon-tile" aria-hidden="true">✚</span>
+            <h3>Respeto</h3>
+            <p class="card__text">Valor de ejemplo pendiente de validación.</p>
+          </article>
+          <article class="card card--elevated card--accent value-card">
+            <span class="icon-tile" aria-hidden="true">◈</span>
+            <h3>Colaboración</h3>
+            <p class="card__text">Valor de ejemplo pendiente de validación.</p>
+          </article>
+          <article class="card card--elevated card--accent value-card">
+            <span class="icon-tile" aria-hidden="true">✦</span>
+            <h3>Curiosidad</h3>
+            <p class="card__text">Valor de ejemplo pendiente de validación.</p>
+          </article>
+          <!-- /build:inst-valores -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light" id="autoridades" aria-labelledby="authorities-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-autoridades-eyebrow eyebrow eyebrow--line" data-tx="autoridades-eyebrow">Organización · ejemplo</span>
+            <h2 id="authorities-title" data-tx="autoridades-titulo" class="tx-autoridades-titulo">Autoridades</h2>
+          </div>
+          <p class="tx-autoridades-lead section__lead" data-tx="autoridades-lead">No se publican identidades ficticias. Los nombres se agregan con autorización.</p>
+        </div>
+        <div class="profile-grid">
+          <!-- build:inst-autoridades -->
+          <article class="card card--elevated profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">[IN]</span>
+            <h3>[Nombre y apellido]</h3>
+            <p class="profile-card__role">[Cargo directivo]</p>
+            <p class="card__text">[Breve reseña pendiente de validación institucional.]</p>
+          </article>
+          <article class="card card--elevated profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">[IN]</span>
+            <h3>[Nombre y apellido]</h3>
+            <p class="profile-card__role">[Cargo directivo]</p>
+            <p class="card__text">[Breve reseña pendiente de validación institucional.]</p>
+          </article>
+          <article class="card card--elevated profile-card">
+            <span class="profile-card__avatar" aria-hidden="true">[IN]</span>
+            <h3>[Nombre y apellido]</h3>
+            <p class="profile-card__role">[Cargo directivo]</p>
+            <p class="card__text">[Breve reseña pendiente de validación institucional.]</p>
+          </article>
+          <!-- /build:inst-autoridades -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-alt" id="docentes" aria-labelledby="teachers-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-docentes-eyebrow eyebrow eyebrow--line" data-tx="docentes-eyebrow">Equipo · ejemplo</span>
+            <h2 id="teachers-title" data-tx="docentes-titulo" class="tx-docentes-titulo">Plantel docente</h2>
+          </div>
+          <p class="tx-docentes-lead section__lead" data-tx="docentes-lead">Áreas, nombres y cargos se agregan solo con autorización institucional.</p>
+        </div>
+        <div class="area-grid">
+          <!-- build:inst-areas -->
+          <article class="area-card">
+            <h3>[Área]</h3>
+            <p>[Referencia pendiente de validación.]</p>
+          </article>
+          <article class="area-card">
+            <h3>[Área]</h3>
+            <p>[Referencia pendiente de validación.]</p>
+          </article>
+          <article class="area-card">
+            <h3>[Área]</h3>
+            <p>[Referencia pendiente de validación.]</p>
+          </article>
+          <article class="area-card">
+            <h3>[Área]</h3>
+            <p>[Referencia pendiente de validación.]</p>
+          </article>
+          <!-- /build:inst-areas -->
+        </div>
+        <a class="link-arrow" href="contacto.html"><span data-tx="docentes-link" class="tx-docentes-link">Ir a contacto</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

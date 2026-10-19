@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────
+#  .gitignore — Sitio Web Institucional IPSEL
+#  Sitio estático (HTML/CSS/JS). Sin dependencias de producción.
+# ─────────────────────────────────────────────────────────────
+
+# ─── Sistema operativo ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─── Editores e IDE ───
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# ─── Dependencias y gestores de paquetes ───
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Logs, temporales y caché ───
+*.log
+*.tmp
+.cache/
+coverage/
+
+# ─── Secretos y configuración local ───
+.env
+.env.*
+*.local
+*.pem
+
+# ─── Artefactos con "~" mal expandida (HOME literal en Windows) ───
+~/
+**/AppData/

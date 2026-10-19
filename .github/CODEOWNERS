@@ -1,0 +1,55 @@
+# CODEOWNERS – cada archivo, su responsable.
+# Reemplazar @ORG por la organización (o usar usuarios individuales si el repo es personal).
+# Docente / Calidad: @ORG/docente
+
+# Archivos compartidos
+/css/tokens.css       @ORG/docente
+/css/base.css         @ORG/docente
+/css/components.css   @ORG/docente
+/js/main.js           @ORG/docente
+/plantilla.html       @ORG/docente
+/docs/                @ORG/docente
+/.github/             @ORG/docente
+/README.md            @ORG/docente
+/package.json         @ORG/docente
+/.editorconfig        @ORG/docente
+/.gitattributes       @ORG/docente
+/partials/            @ORG/docente
+/scripts/             @ORG/docente
+/js/data/             @ORG/docente
+
+# Frente Inicio (grupos 1 a 3)
+/index.html           @ORG/frente-inicio
+/css/pages/inicio/    @ORG/frente-inicio
+/js/pages/inicio/     @ORG/frente-inicio
+/img/inicio/          @ORG/frente-inicio
+
+# Frente Institucional (grupos 4 a 6)
+/institucional.html   @ORG/frente-institucional
+/css/pages/institucional/ @ORG/frente-institucional
+/js/pages/institucional/  @ORG/frente-institucional
+/img/institucional/   @ORG/frente-institucional
+
+# Frente Plan de Estudios (grupos 7 a 9)
+/plan-estudios.html   @ORG/frente-plan
+/css/pages/plan-estudios/ @ORG/frente-plan
+/js/pages/plan-estudios/  @ORG/frente-plan
+/img/plan-estudios/   @ORG/frente-plan
+
+# Frente Noticias (grupos 10 a 12)
+/noticias.html        @ORG/frente-noticias
+/css/pages/noticias/  @ORG/frente-noticias
+/js/pages/noticias/   @ORG/frente-noticias
+/img/noticias/        @ORG/frente-noticias
+
+# Frente Experiencias (grupos 13 a 15)
+/experiencias.html    @ORG/frente-experiencias
+/css/pages/experiencias/ @ORG/frente-experiencias
+/js/pages/experiencias/  @ORG/frente-experiencias
+/img/experiencias/    @ORG/frente-experiencias
+
+# Frente Contacto (grupos 16 a 18)
+/contacto.html        @ORG/frente-contacto
+/css/pages/contacto/  @ORG/frente-contacto
+/js/pages/contacto/   @ORG/frente-contacto
+/img/contacto/        @ORG/frente-contacto

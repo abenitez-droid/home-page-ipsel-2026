@@ -1,0 +1,137 @@
+/* =========================================================
+   tokens.css — Colegio Privado IPSEL
+   Única fuente de colores, tamaños, radios, sombras y degradados.
+   No escribir valores a mano en otros CSS: usar estas variables.
+   Responsable: docente / Comisión de Calidad (cambios solo por PR).
+   ========================================================= */
+:root {
+  /* Marca */
+  --brand-950: #2a0a0a;
+  --brand-800: #600f0f;
+  --brand-700: #801515;
+  --brand-300: #f28b8b; /* bordó claro: usar sobre fondos oscuros (cumple AA) */
+  --brand-200: #f7a8a8;
+
+  /* Neutros */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+
+  /* Estados */
+  --success: #34d399;
+  --danger: #b42318;
+
+  /* Tipografía: stack del sistema (sin fuentes externas) */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --fs-xs: 0.75rem;   /* 12 px: mínimo permitido */
+  --fs-sm: 0.875rem;  /* 14 px */
+  --fs-base: 1rem;    /* 16 px */
+  --fs-h3: 1.125rem;
+  --fs-h2: 1.5rem;
+  --fs-h1: 2.25rem;
+  --lh-tight: 1.1;
+  --lh-body: 1.625;
+
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+
+  /* Bordes redondeados */
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Sombras */
+  --shadow-card: 0 8px 32px -16px rgba(15, 23, 42, 0.15);
+  --shadow-card-hover: 0 16px 40px -16px rgba(15, 23, 42, 0.2);
+  --shadow-brand: 0 8px 24px -12px rgba(128, 21, 21, 0.9);
+  --shadow-panel: 0 24px 80px -20px rgba(0, 0, 0, 0.6);
+
+  /* Degradados (reemplazan los blur pesados del prototipo) */
+  --gradient-brand: linear-gradient(135deg, #801515 0%, #5c0f0f 100%);
+  --gradient-hero: radial-gradient(60% 70% at 30% 0%, rgba(128, 21, 21, 0.35) 0%, transparent 70%), var(--slate-950);
+  --gradient-glow-dark: radial-gradient(50% 60% at 50% 0%, rgba(128, 21, 21, 0.3) 0%, transparent 70%), var(--slate-950);
+  --gradient-panel-dark: linear-gradient(135deg, var(--slate-800) 0%, var(--slate-900) 55%, var(--brand-950) 100%);
+  --gradient-soft: linear-gradient(135deg, var(--slate-100), var(--slate-200));
+  --gradient-soft-brand: linear-gradient(135deg, rgba(128, 21, 21, 0.1), rgba(128, 21, 21, 0.2));
+
+  /* Layout */
+  --container: 75rem; /* 1200 px */
+  --header-h: 4.5rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-h3: 1.25rem;
+    --fs-h2: 1.875rem;
+    --fs-h1: 3rem;
+  }
+}
+
+/* Desktop: un paso más de escala. El rango de tablet (40–64em) conserva la
+   escala intermedia de arriba. */
+@media (min-width: 64em) {
+  :root {
+    --fs-h2: 2.25rem;
+    --fs-h1: 3.5rem;
+  }
+}
+
+/* =========================================================
+   Superficies por sección.
+   El diseño alterna secciones claras y oscuras (no es un modo
+   oscuro del sistema). Cada superficie redefine los tokens
+   semánticos y los componentes los heredan.
+   ========================================================= */
+:root,
+.surface-light {
+  --bg: #ffffff;
+  --card-bg: var(--slate-50);
+  --card-border: var(--slate-100);
+  --border: var(--slate-200);
+  --text: var(--slate-900);
+  --text-muted: var(--slate-600);
+  --accent: var(--brand-700);
+  --accent-hover: var(--brand-800);
+  --focus: var(--brand-700);
+}
+
+.surface-alt {
+  --bg: var(--slate-50);
+  --card-bg: #ffffff;
+  --card-border: var(--slate-200);
+  --border: var(--slate-200);
+  --text: var(--slate-900);
+  --text-muted: var(--slate-600);
+  --accent: var(--brand-700);
+  --accent-hover: var(--brand-800);
+  --focus: var(--brand-700);
+}
+
+.surface-dark {
+  --bg: var(--slate-950);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: var(--slate-100);
+  --text-muted: var(--slate-400);
+  --accent: var(--brand-300);
+  --accent-hover: #ffffff;
+  --focus: var(--brand-300);
+}

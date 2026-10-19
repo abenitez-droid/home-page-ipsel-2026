@@ -1,0 +1,24 @@
+// main.js – JavaScript común (mínimo). Cargar con <script defer>.
+// Responsable: docente / Comisión de Calidad. Cambios solo por PR aprobado.
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".nav__toggle");
+  const list = document.querySelector(".nav__list");
+
+  const setMenu = (open) => {
+    if (!toggle || !list) return;
+    list.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+  };
+
+  if (toggle && list) {
+    toggle.addEventListener("click", () => setMenu(!list.classList.contains("is-open")));
+    list.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+    window.matchMedia("(min-width: 64em)").addEventListener("change", (e) => { if (e.matches) setMenu(false); });
+  }
+
+  // Año actual en el footer
+  const year = document.querySelector("[data-year]");
+  if (year) year.textContent = new Date().getFullYear();
+});

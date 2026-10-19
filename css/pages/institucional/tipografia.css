@@ -1,0 +1,26 @@
+/* =========================================================
+   tipografia.css — GENERADO por scripts/build.js.
+   Origen: js/data/institucional.data.js · campo `textos`.
+   No editar a mano: se sobrescribe en el próximo `npm run build`.
+   Cada clase .tx-<clave> es la tipografía de un texto de la pantalla.
+   ========================================================= */
+
+.tx-aviso { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text); }
+.tx-historia-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-historia-titulo { font-family: var(--font-sans); font-size: var(--fs-h1); color: var(--text); }
+.tx-historia-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-historia-link { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--accent); }
+.tx-trayectoria-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-trayectoria-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-trayectoria-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-identidad-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-identidad-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-valores-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-valores-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-autoridades-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-autoridades-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-autoridades-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-docentes-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-docentes-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-docentes-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-docentes-link { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--accent); }

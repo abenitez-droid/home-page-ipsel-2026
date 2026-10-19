@@ -1,0 +1,31 @@
+/* =========================================================
+   tipografia.css — GENERADO por scripts/build.js.
+   Origen: js/data/contacto.data.js · campo `textos`.
+   No editar a mano: se sobrescribe en el próximo `npm run build`.
+   Cada clase .tx-<clave> es la tipografía de un texto de la pantalla.
+   ========================================================= */
+
+.tx-aviso { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text); }
+.tx-page-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-page-titulo { font-family: var(--font-sans); font-size: var(--fs-h1); color: var(--text); }
+.tx-page-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-contactos-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-contactos-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-contactos-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-datos-titulo { font-family: var(--font-sans); font-size: var(--fs-h3); color: var(--text); }
+.tx-ubicacion-titulo { font-family: var(--font-sans); font-size: var(--fs-h3); color: var(--text); }
+.tx-ubicacion-mapa { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text-muted); }
+.tx-form-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-form-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-form-nota { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-nombre-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-email-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-telefono-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-motivo-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-mensaje-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-cf-consent-label { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--text); }
+.tx-inscripciones-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-inscripciones-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-inscripciones-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-faq-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-faq-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }

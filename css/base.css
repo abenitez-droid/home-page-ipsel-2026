@@ -1,0 +1,72 @@
+/* base.css – reset, tipografía y layout general */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; display: block; }
+img { height: auto; }
+
+h1, h2, h3 { margin: 0; color: var(--text); letter-spacing: -0.025em; }
+h1 { font-size: var(--fs-h1); font-weight: 800; line-height: var(--lh-tight); }
+h2 { font-size: var(--fs-h2); font-weight: 700; line-height: var(--lh-tight); }
+h3 { font-size: var(--fs-h3); font-weight: 600; line-height: 1.25; }
+p { margin: 0; color: var(--text-muted); }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* El header es sticky: al saltar a un ancla o al enfocar un elemento, dejamos
+   margen de scroll para que no quede tapado por la barra (WCAG 2.4.11). */
+:target,
+:focus-visible { scroll-margin-top: calc(var(--header-h) + var(--space-3)); }
+
+.container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
+
+/* Una superficie pinta su fondo y su texto */
+.surface-light, .surface-alt, .surface-dark { background: var(--bg); color: var(--text); }
+
+.section { padding-block: clamp(4rem, 8vw, 7rem); }
+.stack > * + * { margin-top: var(--space-4); }
+
+.caption {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.skip-link {
+  position: absolute; left: -999px; top: 0; z-index: 100;
+  background: var(--brand-700); color: #fff;
+  padding: var(--space-2) var(--space-4);
+}
+.skip-link:focus { left: 0; color: #fff; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+.escudo {
+  width: clamp(120px, 20vw, 260px);
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}

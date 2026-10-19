@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+    content="Experiencias de demostración para la maqueta del sitio IPSEL.">
+  <title data-tx="pantalla-titulo">Experiencias | IPSEL</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/experiencias/experiencias.css">
+  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/experiencias.data.js -->
+  <link rel="stylesheet" href="css/pages/experiencias/tipografia.css">
+  <noscript>
+    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+    <style>
+      @media (max-width: 63.99em) {
+        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+        .nav { flex-basis: 100%; }
+        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+        .nav__link { padding: var(--space-2) 0; }
+        .nav__toggle { display: none; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html" aria-current="page">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main id="contenido">
+    <aside class="tx-aviso container card" role="note" data-tx="aviso">Contenido de demostración: los proyectos y actividades de esta página son ejemplos, no relatos de experiencias reales.</aside>
+
+    <section class="section surface-light" aria-labelledby="page-title">
+      <div class="container">
+        <div class="section__head">
+          <div class="stack">
+            <span class="tx-page-eyebrow eyebrow eyebrow--line" data-tx="page-eyebrow">Experiencias · ejemplo</span>
+            <h1 id="page-title" data-tx="page-titulo" class="tx-page-titulo">Aprender haciendo</h1>
+            <p data-tx="page-lead" class="tx-page-lead">Proyectos, actividades y voces de la comunidad. Los contenidos definitivos se publican cuando exista información confirmada y autorización.</p>
+          </div>
+          <a class="btn btn--outline" href="noticias.html" data-tx="page-cta">Ver noticias</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-alt" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head">
+          <div><span class="tx-proyectos-eyebrow eyebrow eyebrow--line" data-tx="proyectos-eyebrow">Proyectos · muestra</span>
+            <h2 id="projects-title" data-tx="proyectos-titulo" class="tx-proyectos-titulo">Ideas para explorar</h2>
+          </div>
+          <p class="tx-proyectos-lead section__lead" data-tx="proyectos-lead">Ejemplos editoriales para mostrar cómo se presentaría una iniciativa de aula.</p>
+        </div>
+        <div class="grid grid--3">
+          <!-- build:exp-proyectos -->
+          <article class="card card--elevated project-card">
+            <div class="project-card__media" aria-hidden="true">Imagen del proyecto</div>
+            <div class="project-card__body">
+              <span class="project-card__meta">Proyecto · orientación Informática</span>
+              <h3>Prototipo digital</h3>
+              <p class="card__text">Ejemplo editorial para mostrar cómo podría presentarse una iniciativa de aula. No corresponde a un proyecto realizado.</p>
+            </div>
+          </article>
+          <article class="card card--elevated project-card">
+            <div class="project-card__media" aria-hidden="true">Imagen del proyecto</div>
+            <div class="project-card__body">
+              <span class="project-card__meta">Actividad · talleres</span>
+              <h3>Exploración colaborativa</h3>
+              <p class="card__text">Texto de muestra para ensayar la presentación de una actividad. No describe un evento real.</p>
+            </div>
+          </article>
+          <article class="card card--elevated project-card">
+            <div class="project-card__media" aria-hidden="true">Imagen del proyecto</div>
+            <div class="project-card__body">
+              <span class="project-card__meta">Experiencia · comunidad</span>
+              <h3>Laboratorio de ideas</h3>
+              <p class="card__text">Contenido ilustrativo pendiente de reemplazo por información validada.</p>
+            </div>
+          </article>
+          <!-- /build:exp-proyectos -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light" id="actividades" aria-labelledby="activities-title">
+      <div class="container">
+        <div class="section__head">
+          <div><span class="tx-actividades-eyebrow eyebrow eyebrow--line" data-tx="actividades-eyebrow">Actividades · muestra</span>
+            <h2 id="activities-title" data-tx="actividades-titulo" class="tx-actividades-titulo">Encuentros y eventos</h2>
+          </div>
+          <p class="tx-actividades-lead section__lead" data-tx="actividades-lead">Fechas y descripciones pendientes de confirmación institucional.</p>
+        </div>
+        <div class="activity-list">
+          <!-- build:exp-actividades -->
+          <article class="activity">
+            <span class="activity__date">[Fecha]</span>
+            <div class="activity__body">
+              <h3>[Actividad pendiente de confirmación]</h3>
+              <p>[Descripción de la actividad, a completar con información validada.]</p>
+            </div>
+          </article>
+          <article class="activity">
+            <span class="activity__date">[Fecha]</span>
+            <div class="activity__body">
+              <h3>[Actividad pendiente de confirmación]</h3>
+              <p>[Descripción de la actividad, a completar con información validada.]</p>
+            </div>
+          </article>
+          <!-- /build:exp-actividades -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-dark" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section__head">
+          <div><span class="tx-comunidad-eyebrow eyebrow eyebrow--line" data-tx="comunidad-eyebrow">Comunidad</span>
+            <h2 id="community-title" data-tx="comunidad-titulo" class="tx-comunidad-titulo">Voces de la comunidad</h2>
+          </div>
+        </div>
+        <!-- build:exp-comunidad -->
+        <p class="community-note">No se muestran testimonios ficticios atribuidos a estudiantes, familias o personal. Este bloque queda como marcador de posición hasta contar con testimonios autorizados por escrito.</p>
+        <!-- /build:exp-comunidad -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

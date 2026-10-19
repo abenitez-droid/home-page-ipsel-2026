@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+    content="Información de contacto de demostración para la maqueta del sitio IPSEL.">
+  <title data-tx="pantalla-titulo">Contacto e inscripciones | IPSEL</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/contacto/contacto.css">
+  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/contacto.data.js -->
+  <link rel="stylesheet" href="css/pages/contacto/tipografia.css">
+  <noscript>
+    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+    <style>
+      @media (max-width: 63.99em) {
+        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+        .nav { flex-basis: 100%; }
+        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+        .nav__link { padding: var(--space-2) 0; }
+        .nav__toggle { display: none; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+  <script src="js/data/contacto.data.js" defer></script>
+  <script src="js/pages/contacto/formulario.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main id="contenido">
+    <aside class="tx-aviso container card" role="note" data-tx="aviso">Contenido de demostración: los datos de contacto, el mapa y el formulario son ilustrativos. El formulario no envía información.</aside>
+
+    <section class="section surface-light" aria-labelledby="page-title">
+      <div class="container stack">
+        <span class="tx-page-eyebrow eyebrow eyebrow--line" data-tx="page-eyebrow">Contacto · ejemplo</span>
+        <h1 id="page-title" data-tx="page-titulo" class="tx-page-titulo">Estamos para orientarte</h1>
+        <p data-tx="page-lead" class="tx-page-lead">Esta página muestra dónde aparecerá la información de contacto una vez que la institución la confirme.</p>
+      </div>
+    </section>
+
+    <section class="section surface-alt" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-contactos-eyebrow eyebrow eyebrow--line" data-tx="contactos-eyebrow">Canales · ejemplo</span>
+            <h2 id="contact-title" data-tx="contactos-titulo" class="tx-contactos-titulo">Datos de contacto</h2>
+          </div>
+          <p class="tx-contactos-lead section__lead" data-tx="contactos-lead">Los datos definitivos se publican cuando la institución los valide.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-column">
+            <article class="card card--elevated">
+              <h3 data-tx="datos-titulo" class="tx-datos-titulo">Datos institucionales</h3>
+              <dl class="contact-list">
+                <!-- build:contacto-datos -->
+                <div class="contact-list__item">
+                  <dt>Dirección</dt>
+                  <dd>[Dato pendiente de confirmación institucional]</dd>
+                </div>
+                <div class="contact-list__item">
+                  <dt>Horarios de atención</dt>
+                  <dd>[Dato pendiente de confirmación institucional]</dd>
+                </div>
+                <div class="contact-list__item">
+                  <dt>Teléfono</dt>
+                  <dd>[Dato pendiente de confirmación institucional]</dd>
+                </div>
+                <div class="contact-list__item">
+                  <dt>Correo electrónico</dt>
+                  <dd>[Dato pendiente de confirmación institucional]</dd>
+                </div>
+                <!-- /build:contacto-datos -->
+              </dl>
+            </article>
+
+            <article class="card card--elevated">
+              <h3 data-tx="ubicacion-titulo" class="tx-ubicacion-titulo">Ubicación</h3>
+              <div class="map-placeholder" role="img" data-tx="ubicacion-mapa-aria" data-tx-attr="aria-label"
+                aria-label="Mapa de ubicación pendiente de confirmación institucional">
+                <span class="map-placeholder__pin" aria-hidden="true"></span>
+                <span data-tx="ubicacion-mapa" class="tx-ubicacion-mapa">Mapa pendiente de confirmación</span>
+              </div>
+            </article>
+          </div>
+
+          <article class="card card--elevated" aria-labelledby="form-title">
+            <span class="tx-form-eyebrow eyebrow eyebrow--line" data-tx="form-eyebrow">Consulta · ejemplo</span>
+            <h2 id="form-title" data-tx="form-titulo" class="tx-form-titulo">Formulario de contacto</h2>
+            <p class="tx-form-nota form-demo-note" role="note" data-tx="form-nota">Formulario de demostración: no envía información. No ingreses datos personales.</p>
+
+            <form class="contact-form" id="contact-form" data-contact-email="">
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field__label" for="cf-nombre"><span data-tx="cf-nombre-label" class="tx-cf-nombre-label">Nombre y apellido</span> <span aria-hidden="true">*</span></label>
+                  <input class="field__control" id="cf-nombre" name="nombre" type="text" autocomplete="name" required
+                    minlength="2" aria-describedby="cf-nombre-error">
+                  <p class="field__error" id="cf-nombre-error" hidden></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="cf-email"><span data-tx="cf-email-label" class="tx-cf-email-label">Correo electrónico</span> <span aria-hidden="true">*</span></label>
+                  <input class="field__control" id="cf-email" name="email" type="email" autocomplete="email" required
+                    aria-describedby="cf-email-error">
+                  <p class="field__error" id="cf-email-error" hidden></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="cf-telefono"><span data-tx="cf-telefono-label" class="tx-cf-telefono-label">Teléfono (opcional)</span></label>
+                  <input class="field__control" id="cf-telefono" name="telefono" type="tel" autocomplete="tel"
+                    aria-describedby="cf-telefono-error">
+                  <p class="field__error" id="cf-telefono-error" hidden></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="cf-motivo"><span data-tx="cf-motivo-label" class="tx-cf-motivo-label">Motivo</span> <span aria-hidden="true">*</span></label>
+                  <select class="field__control" id="cf-motivo" name="motivo" required aria-describedby="cf-motivo-error">
+                    <option value="" data-tx="cf-motivo-opcion">Seleccioná una opción</option>
+                    <option value="consulta" data-tx="cf-motivo-consulta">Consulta general</option>
+                    <option value="inscripciones" data-tx="cf-motivo-inscripciones">Inscripciones</option>
+                    <option value="otro" data-tx="cf-motivo-otro">Otro</option>
+                  </select>
+                  <p class="field__error" id="cf-motivo-error" hidden></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="cf-mensaje"><span data-tx="cf-mensaje-label" class="tx-cf-mensaje-label">Mensaje</span> <span aria-hidden="true">*</span></label>
+                <textarea class="field__control" id="cf-mensaje" name="mensaje" rows="5" required minlength="10"
+                  aria-describedby="cf-mensaje-error"></textarea>
+                <p class="field__error" id="cf-mensaje-error" hidden></p>
+              </div>
+
+              <div class="field field--check">
+                <input type="checkbox" id="cf-consent" name="consent" required aria-describedby="cf-consent-error">
+                <label for="cf-consent"><span data-tx="cf-consent-label" class="tx-cf-consent-label">Autorizo el uso de mis datos únicamente para responder esta consulta.</span> <span
+                    aria-hidden="true">*</span></label>
+                <p class="field__error" id="cf-consent-error" hidden></p>
+              </div>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              <button class="btn btn--primary" type="submit" data-tx="cf-enviar">Enviar consulta</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light" id="inscripciones" aria-labelledby="inscripciones-title">
+      <div class="container inscripciones-layout">
+        <div class="stack">
+          <span class="tx-inscripciones-eyebrow eyebrow eyebrow--line" data-tx="inscripciones-eyebrow">Inscripciones · ejemplo</span>
+          <h2 id="inscripciones-title" data-tx="inscripciones-titulo" class="tx-inscripciones-titulo">Información para aspirantes</h2>
+          <p data-tx="inscripciones-lead" class="tx-inscripciones-lead">Requisitos, fechas, cupos y canal de consulta pendientes de confirmación. No se debe interpretar este bloque como una convocatoria abierta.</p>
+        </div>
+        <article class="card card--brand card--elevated">
+          <span class="card__label" data-tx="inscripciones-etiqueta">Próximamente</span>
+          <h3 data-tx="inscripciones-card-titulo">[Datos de inscripción]</h3>
+          <p class="card__text" data-tx="inscripciones-card-detalle">Se publicarán cuando la institución los confirme.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface-alt" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tx-faq-eyebrow eyebrow eyebrow--line" data-tx="faq-eyebrow">Ayuda</span>
+            <h2 id="faq-title" data-tx="faq-titulo" class="tx-faq-titulo">Preguntas frecuentes de muestra</h2>
+          </div>
+        </div>
+        <div class="faq">
+          <!-- build:contacto-faq -->
+          <details class="faq__item">
+            <summary>¿Cómo consulto los requisitos de inscripción?</summary>
+            <p>La información se agregará cuando estén confirmados los requisitos y el canal oficial de consulta.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿El formulario de esta página envía mis datos?</summary>
+            <p>No. Esta página es una demostración y no recopila ni transmite datos personales.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuándo estarán disponibles los datos de contacto?</summary>
+            <p>Cuando la institución confirme la dirección, los horarios, el teléfono y el correo electrónico.</p>
+          </details>
+          <!-- /build:contacto-faq -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

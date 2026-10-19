@@ -1,0 +1,28 @@
+name: Calidad
+
+# Verifica que el header/footer y los bloques de contenido generados estén
+# sincronizados con partials/ y js/data/, y ejecuta las comprobaciones básicas
+# (imágenes, h1, estilos en línea...).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerar partials y contenido, y verificar que estén commiteados
+        run: |
+          npm run build
+          git diff --exit-code
+
+      - name: Comprobaciones de calidad
+        run: npm run check

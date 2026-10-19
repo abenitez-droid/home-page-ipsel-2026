@@ -1,0 +1,71 @@
+/* institucional.css — página Institucional.
+   Responsable: Frente Institucional (grupos 4–6).
+   Solo clases propias de la página; usa variables de tokens.css. */
+
+/* ---------- Encabezado + ficha rápida ---------- */
+.institucional-intro { display: grid; gap: var(--space-6); }
+@media (min-width: 48em) {
+  .institucional-intro { grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); align-items: center; }
+}
+.fact-list {
+  margin: 0; padding: var(--space-5); display: grid; gap: var(--space-4);
+  border: 1px solid var(--card-border); border-radius: var(--radius-xl); background: var(--card-bg);
+}
+.fact-list > div { display: grid; gap: 0.15rem; }
+.fact-list dt {
+  font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--text-muted);
+}
+.fact-list dd { margin: 0; font-weight: 600; color: var(--text); }
+
+.institucional-subtitle { margin-top: var(--space-7); }
+
+/* ---------- Línea de tiempo (historia) ---------- */
+.timeline {
+  list-style: none; margin: var(--space-5) 0 0; padding-left: var(--space-5);
+  display: grid; gap: var(--space-5); border-left: 2px solid var(--border);
+}
+.timeline__item { position: relative; }
+.timeline__item::before {
+  content: ""; position: absolute; left: calc(-1 * var(--space-5) - 0.35rem); top: 0.3rem;
+  width: 0.7rem; height: 0.7rem; border-radius: 50%;
+  background: var(--brand-700); box-shadow: 0 0 0 3px var(--bg);
+}
+.timeline__year { font-size: var(--fs-sm); font-weight: 700; color: var(--accent); }
+.timeline__item p { margin-top: 0.15rem; font-size: var(--fs-sm); }
+
+/* ---------- Misión / visión y valores ---------- */
+.value-card .icon-tile { margin-bottom: var(--space-3); }
+.value-card h3 { margin-bottom: var(--space-1); }
+
+/* ---------- Fichas de personas (autoridades / docentes) ---------- */
+.profile-grid {
+  display: grid; gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin-top: var(--space-5);
+}
+.profile-card { display: grid; gap: var(--space-2); justify-items: start; }
+.profile-card__avatar {
+  width: 3.5rem; height: 3.5rem; border-radius: var(--radius-lg);
+  display: grid; place-items: center; background: var(--gradient-soft-brand);
+  color: var(--brand-800); font-size: var(--fs-sm); font-weight: 700;
+}
+.profile-card__role { font-size: var(--fs-sm); font-weight: 600; color: var(--accent); }
+
+/* ---------- Áreas docentes ---------- */
+.area-grid {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  margin-top: var(--space-5);
+}
+.area-card {
+  padding: var(--space-4); border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg); background: var(--card-bg);
+}
+.area-card h3 { font-size: var(--fs-base); }
+.area-card p { margin-top: var(--space-1); font-size: var(--fs-sm); }
+
+/* Tablet: áreas docentes en 2 columnas (quedan 2×2, sin una huérfana). */
+@media (min-width: 48em) and (max-width: 63.99em) {
+  .area-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

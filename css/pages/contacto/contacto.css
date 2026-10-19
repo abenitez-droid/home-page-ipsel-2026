@@ -1,0 +1,91 @@
+/* contacto.css — página Contacto: datos, mapa, formulario y FAQ.
+   Responsable: Frente Contacto (grupos 16–18).
+   Solo clases propias de la página; usa variables de tokens.css. */
+
+/* ---------- Layout de la sección de contacto ---------- */
+.contact-layout { display: grid; gap: var(--space-5); }
+@media (min-width: 64em) {
+  .contact-layout { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); align-items: start; }
+}
+.contact-column { display: grid; gap: var(--space-5); }
+/* Tablet: el layout sigue en una columna, así que los datos y el mapa se
+   reparten en dos para aprovechar el ancho. */
+@media (min-width: 48em) and (max-width: 63.99em) {
+  .contact-column { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+}
+
+/* ---------- Lista de datos de contacto ---------- */
+.contact-list { margin: 0; display: grid; gap: var(--space-4); }
+.contact-list__item { display: grid; gap: 0.15rem; }
+.contact-list dt {
+  font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--text-muted);
+}
+.contact-list dd {
+  margin: 0; color: var(--text); font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Mapa (marcador de posición) ---------- */
+.map-placeholder {
+  display: grid; place-items: center; gap: var(--space-2);
+  min-height: 12rem; margin-top: var(--space-4); padding: var(--space-5);
+  border: 1px dashed var(--border); border-radius: var(--radius-lg);
+  background: var(--gradient-soft); text-align: center;
+  color: var(--text-muted); font-size: var(--fs-sm);
+}
+.map-placeholder__pin {
+  width: 1.25rem; height: 1.25rem; border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg); background: var(--brand-700);
+}
+
+/* ---------- Formulario ---------- */
+.form-demo-note {
+  margin-top: var(--space-3); padding: var(--space-3) var(--space-4);
+  border-left: 3px solid var(--brand-700); border-radius: var(--radius-sm);
+  background: var(--gradient-soft-brand); font-size: var(--fs-sm); color: var(--text);
+}
+.contact-form { display: grid; gap: var(--space-4); margin-top: var(--space-5); }
+.form-grid { display: grid; gap: var(--space-4); }
+@media (min-width: 40em) {
+  .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.field--check { grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: var(--space-3); }
+.field--check input {
+  width: 1.1rem; height: 1.1rem; margin-top: 0.25rem;
+  accent-color: var(--brand-700);
+}
+.field--check label { font-size: var(--fs-sm); color: var(--text); }
+.field--check .field__error { grid-column: 2; }
+
+.field__control[aria-invalid="true"] { border-color: var(--danger); }
+.field__control[aria-invalid="true"]:focus-visible { outline-color: var(--danger); }
+
+.form-status { min-height: 1.4rem; margin: 0; font-size: var(--fs-sm); color: var(--text-muted); }
+.form-status[data-state="ok"] { color: var(--color-success, var(--success)); }
+.form-status[data-state="error"] { color: var(--danger); }
+
+/* ---------- Inscripciones ---------- */
+.inscripciones-layout { display: grid; gap: var(--space-5); }
+@media (min-width: 48em) {
+  .inscripciones-layout { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: start; }
+}
+
+/* ---------- Preguntas frecuentes (acordeón nativo, sin JS) ---------- */
+.faq { display: grid; gap: var(--space-3); }
+.faq__item {
+  border: 1px solid var(--card-border); border-radius: var(--radius-lg);
+  background: var(--card-bg); padding: var(--space-4) var(--space-5);
+}
+.faq__item[open] { border-color: var(--brand-300); }
+.faq__item summary {
+  cursor: pointer; font-weight: 600; color: var(--text);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-3);
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+"; flex: none; font-weight: 700; color: var(--brand-700); font-size: 1.25rem; line-height: 1;
+}
+.faq__item[open] summary::after { content: "–"; }
+.faq__item p { margin-top: var(--space-3); font-size: var(--fs-sm); }

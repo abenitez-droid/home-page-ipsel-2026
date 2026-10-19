@@ -1,0 +1,31 @@
+/* inicio.css — bloques de la página Inicio: Propuesta, Pilares y Adelantos.
+   El hero se estiliza aparte en hero.css.
+   Responsable: Frente Inicio (grupos 1–3). Usa variables de tokens.css. */
+
+/* ---------- Propuesta educativa ---------- */
+.propuesta-grid { align-items: stretch; }
+.propuesta-grid .card--brand { position: relative; overflow: hidden; }
+.propuesta-grid .card--brand::after {
+  content: ""; position: absolute; right: -3rem; bottom: -3rem;
+  width: 9rem; height: 9rem; border-radius: 50%;
+  background: #ffffff; opacity: 0.08; pointer-events: none;
+}
+
+/* ---------- Pilares institucionales: numeración decorativa ----------
+   El número se genera en render.js dentro de un <span aria-hidden="true">
+   para que los lectores de pantalla no lo anuncien (es solo decorativo). */
+.pilar-card { position: relative; padding-top: var(--space-6); }
+.pilar-card__index {
+  position: absolute; top: var(--space-4); right: var(--space-5);
+  font-size: var(--fs-h2); font-weight: 800; line-height: 1;
+  color: var(--brand-200); letter-spacing: -0.02em;
+}
+
+/* ---------- Adelanto de Experiencias ---------- */
+.comunidad-grid { align-items: stretch; }
+.comunidad-grid .testimonial { height: 100%; }
+
+/* ---------- Adelanto de Noticias ---------- */
+.noticias-grid { align-items: stretch; }
+.noticias-grid .news-card { height: 100%; }
+.noticias-grid .news-card__title { font-size: var(--fs-h3); }

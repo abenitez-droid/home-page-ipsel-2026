@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
+    content="Plan de estudios de demostración para la maqueta del sitio IPSEL.">
+  <title data-tx="pantalla-titulo">Plan de estudios | IPSEL</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/plan-estudios/plan-estudios.css">
+  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/plan-estudios.data.js -->
+  <link rel="stylesheet" href="css/pages/plan-estudios/tipografia.css">
+  <noscript>
+    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
+    <style>
+      @media (max-width: 63.99em) {
+        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
+        .nav { flex-basis: 100%; }
+        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
+        .nav__link { padding: var(--space-2) 0; }
+        .nav__toggle { display: none; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+  <script src="js/data/plan-estudios.data.js" defer></script>
+  <script src="js/pages/plan-estudios/plan-estudios.js" defer></script>
+</head>
+
+<body class="surface-alt">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header surface-light">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+      <span class="brand__mark" aria-hidden="true">IP</span>
+      <span class="brand__text">
+        <span class="brand__name">Colegio Privado IPSEL</span>
+        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+        <li><a class="nav__link" href="plan-estudios.html" aria-current="page">Plan de Estudios</a></li>
+        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main id="contenido" class="container page-layout">
+    <section class="page-heading" id="oferta">
+      <aside class="tx-aviso card" role="note" data-tx="aviso">Contenido de demostración: materias, carga horaria y datos académicos de esta página son ilustrativos y no representan el plan oficial.</aside>
+      <span class="tx-oferta-eyebrow eyebrow eyebrow--line" data-tx="oferta-eyebrow">Oferta académica</span>
+      <h1 data-tx="oferta-titulo" class="tx-oferta-titulo">Bachiller en Informática</h1>
+      <p class="page-heading__subtitle" data-tx="oferta-subtitulo">Plan de estudios · 1.er a 5.º año</p>
+      <p class="tx-oferta-intro page-heading__intro" data-tx="oferta-intro">Explorá las materias, la carga horaria y los detalles de cada espacio curricular.</p>
+    </section>
+
+    <aside class="career-panel card card--elevated" aria-labelledby="career-title">
+      <button class="career-panel__toggle" type="button" aria-expanded="true" aria-controls="career-content">
+        <span id="career-title" data-tx="carrera-titulo" class="tx-carrera-titulo">Información de carrera</span>
+        <span class="career-panel__chevron" aria-hidden="true">⌃</span>
+      </button>
+      <div class="career-panel__content" id="career-content">
+        <dl class="career-data">
+          <div>
+            <dt data-tx="carrera-dato-carrera-titulo">Carrera</dt>
+            <dd data-tx="carrera-dato-carrera-detalle">Carrera de muestra</dd>
+          </div>
+          <div>
+            <dt data-tx="carrera-dato-duracion-titulo">Duración</dt>
+            <dd data-tx="carrera-dato-duracion-detalle">5 años</dd>
+          </div>
+          <div>
+            <dt data-tx="carrera-dato-modalidad-titulo">Modalidad</dt>
+            <dd data-tx="carrera-dato-modalidad-detalle">Presencial</dd>
+          </div>
+          <div>
+            <dt data-tx="carrera-dato-titulacion-titulo">Titulación</dt>
+            <dd data-tx="carrera-dato-titulacion-detalle">Titulación de ejemplo</dd>
+          </div>
+          <div>
+            <dt data-tx="carrera-dato-cupos-titulo">Cupos</dt>
+            <dd data-tx="carrera-dato-cupos-detalle">Dato de ejemplo</dd>
+          </div>
+        </dl>
+        <div class="career-objective">
+          <h2 data-tx="objetivo-titulo">Objetivo</h2>
+          <ul>
+            <li data-tx="objetivo-item-1">Formar profesionales críticos y reflexivos.</li>
+            <li data-tx="objetivo-item-2">Desarrollar competencias para la docencia e investigación.</li>
+          </ul>
+        </div>
+        <button class="btn btn--outline download-btn" type="button" id="download-plan" data-tx="descargar-plan">Descargar plan en PDF</button>
+      </div>
+    </aside>
+
+    <section class="study-panel" aria-labelledby="study-title">
+      <div class="study-tools">
+        <label class="search-box">
+          <span class="visually-hidden" data-tx="buscador-etiqueta">Buscar materia por nombre o código</span>
+          <span aria-hidden="true" class="search-box__icon">⌕</span>
+          <input id="subject-search" type="search" data-tx="buscador-placeholder" data-tx-attr="placeholder"
+            placeholder="Buscar materia por nombre o código…" autocomplete="off">
+          <button class="search-box__clear" id="clear-search" type="button" data-tx="buscador-limpiar"
+            data-tx-attr="aria-label" aria-label="Limpiar búsqueda" hidden>×</button>
+        </label>
+        <label class="filter-select">
+          <span class="visually-hidden" data-tx="filtro-tipo-etiqueta">Filtrar por tipo de materia</span>
+          <select id="type-filter">
+            <option value="all" data-tx="filtro-tipo-todos">Todos los tipos</option>
+            <option value="Obligatoria" data-tx="filtro-tipo-obligatoria">Obligatoria</option>
+            <option value="Optativa" data-tx="filtro-tipo-optativa">Optativa</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="year-tabs" role="tablist" aria-label="Año de cursado" data-tx="años-etiqueta" data-tx-attr="aria-label">
+        <!-- build:plan-anios -->
+        <button class="year-tab is-active" role="tab" aria-selected="true" data-year="1">1.er año</button>
+        <button class="year-tab" role="tab" aria-selected="false" data-year="2" tabindex="-1">2.º año</button>
+        <button class="year-tab" role="tab" aria-selected="false" data-year="3" tabindex="-1">3.er año</button>
+        <button class="year-tab" role="tab" aria-selected="false" data-year="4" tabindex="-1">4.º año</button>
+        <button class="year-tab" role="tab" aria-selected="false" data-year="5" tabindex="-1">5.º año</button>
+        <!-- /build:plan-anios -->
+      </div>
+
+      <div class="study-heading">
+        <div>
+          <span class="tx-estudio-eyebrow eyebrow" data-tx="estudio-eyebrow">Plan de estudios</span>
+          <h2 id="study-title" data-tx="estudio-titulo">1.er año — Materias</h2>
+        </div>
+        <span class="subject-count" id="subject-count" data-tx="materias-count">4 materias</span>
+      </div>
+
+      <p class="results-message" id="results-message" aria-live="polite"></p>
+      <div class="subjects-table-wrap">
+        <table class="subjects-table">
+          <thead>
+            <tr>
+              <th scope="col" data-tx="tabla-codigo">Código</th>
+              <th scope="col" data-tx="tabla-materia">Materia</th>
+              <th scope="col" data-tx="tabla-horas">Horas</th>
+              <th scope="col" data-tx="tabla-tipo">Tipo</th>
+              <th scope="col"><span class="visually-hidden" data-tx="tabla-acciones">Acciones</span></th>
+            </tr>
+          </thead>
+          <tbody id="subjects-body"></tbody>
+        </table>
+      </div>
+      <div class="subject-cards" id="subject-cards" aria-label="Materias" data-tx="materias-lista-etiqueta"
+        data-tx-attr="aria-label"></div>
+
+      <section class="subject-detail card" id="subject-detail" aria-labelledby="detail-title" hidden>
+        <div class="subject-detail__header">
+          <div>
+            <span class="tx-detalle-eyebrow eyebrow" data-tx="detalle-eyebrow">Detalle de materia seleccionada</span>
+            <h3 id="detail-title" data-tx="detalle-titulo">Matemática I</h3>
+          </div>
+          <button type="button" class="icon-button" id="close-detail" data-tx="detalle-cerrar" data-tx-attr="aria-label"
+            aria-label="Cerrar detalle">×</button>
+        </div>
+        <div class="detail-meta" id="detail-meta"></div>
+        <p class="detail-description" id="detail-description"></p>
+        <p class="detail-prerequisites" id="detail-prerequisites"></p>
+        <button class="btn btn--outline btn--sm detail-close-btn" type="button" id="close-detail-bottom"
+          data-tx="detalle-cerrar-abajo">Cerrar detalle</button>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer surface-dark">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+          <span class="brand__mark" aria-hidden="true">IP</span>
+          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
+        </a>
+        <p class="site-footer__description">Colegio Privado IPSEL –
+          Instituto Privado Secundario Latinoamericano.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Institución</h2>
+        <ul class="footer__list">
+          <li><a href="institucional.html#historia">Historia y misión</a></li>
+          <li><a href="institucional.html#autoridades">Autoridades</a></li>
+          <li><a href="institucional.html#docentes">Plantel docente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Explorar</h2>
+        <ul class="footer__list">
+          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li>[Dirección real]</li>
+          <li>[Horarios de atención]</li>
+          <li>[Teléfono]</li>
+          <li>[Correo electrónico]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
+      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

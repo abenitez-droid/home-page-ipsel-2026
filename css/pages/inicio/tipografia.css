@@ -1,0 +1,23 @@
+/* =========================================================
+   tipografia.css — GENERADO por scripts/build.js.
+   Origen: js/data/inicio.data.js · campo `textos`.
+   No editar a mano: se sobrescribe en el próximo `npm run build`.
+   Cada clase .tx-<clave> es la tipografía de un texto de la pantalla.
+   ========================================================= */
+
+.tx-aviso { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text); }
+.tx-hero-badge { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--text-muted); }
+.tx-hero-titulo { font-family: var(--font-sans); font-size: var(--fs-h1); color: var(--text); }
+.tx-hero-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-propuesta-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-propuesta-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-propuesta-lead { font-family: var(--font-sans); font-size: var(--fs-base); color: var(--text-muted); }
+.tx-pilares-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-pilares-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-pilares-link { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--accent); }
+.tx-experiencias-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-experiencias-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-experiencias-link { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--accent); }
+.tx-noticias-eyebrow { font-family: var(--font-sans); font-size: var(--fs-xs); color: var(--accent); }
+.tx-noticias-titulo { font-family: var(--font-sans); font-size: var(--fs-h2); color: var(--text); }
+.tx-noticias-link { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--accent); }

@@ -116,7 +116,7 @@ Para que el proyecto se considere aprobado como producto, debe cumplir además:
 ## 5. Entregables Finales
 
 1.  Repositorio en GitHub con todo el historial.
-2.  Sitio desplegado en GitHub Pages.
+2.  Sitio desplegado en Vercel.
 3.  Ficha de autoevaluación individual.
 
 **Proyecto muy bien estructurado para un trabajo final de secundaria: cubre aspectos técnicos, metodológicos y legales/éticos.**

@@ -65,5 +65,5 @@ El sitio es condición de aprobación del producto, **no una segunda nota**. Si 
 ## 6. Entregables finales
 
 1. Repositorio con todo el historial.
-2. Sitio desplegado (GitHub Pages o Vercel, según defina el docente; ver `docs/despliegue.md`).
+2. Sitio desplegado en Vercel (ver `docs/despliegue.md`).
 3. Ficha de aporte individual en el PR final.

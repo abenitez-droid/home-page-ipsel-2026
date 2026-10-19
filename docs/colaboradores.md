@@ -1,8 +1,8 @@
 # Sitio Web Institucional - [Nombre del Colegio]
 
-**Curso:** [Ej: 5to Año - Software Libre y Programación]  
+**Curso:** 5to Año - Software Libre y Programación
 **Año:** 2026  
-**Docente:** [Aban Tejerina, Franco Emanuel]  
+**Docente:** Aban Tejerina, Franco Emanuel  
 **Repositorio:** Este repositorio contiene el proyecto final de desarrollo web.
 
 > **Reglas de Conformación:** No hay límite de grupos. Cada grupo con un máximo de 4 integrantes.
@@ -120,6 +120,6 @@ Explico brevemente por qué considero que merezco la nota X según la rúbrica. 
 - [ ] Imágenes optimizadas (< 500kb c/u)
 - [ ] No hay enlaces rotos
 - [ ] Repositorio con historial limpio y PRs aprobados
-- [ ] Sitio desplegado en GitHub Pages: [pegar link aquí]
+- [ ] Sitio desplegado en Vercel: [pegar link aquí]
 
-**Link al sitio desplegado:** `https://[usuario].github.io/[nombre-repo]/`
+**Link al sitio desplegado:** `https://[nombre-proyecto].vercel.app/`

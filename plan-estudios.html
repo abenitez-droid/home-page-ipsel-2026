@@ -1,231 +1,539 @@
+
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-tx="pantalla-descripcion" data-tx-attr="content"
-    content="Plan de estudios de demostración para la maqueta del sitio IPSEL.">
-  <title data-tx="pantalla-titulo">Plan de estudios | IPSEL</title>
+  <meta name="description" content="Plan de estudios del Bachiller con Orientación en Informática del Colegio Privado IPSEL.">
+  <title>Plan de estudios | IPSEL</title>
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/plan-estudios/plan-estudios.css">
-  <!-- Tipografía de los textos de esta pantalla: generada desde js/data/plan-estudios.data.js -->
   <link rel="stylesheet" href="css/pages/plan-estudios/tipografia.css">
-  <noscript>
-    <!-- Sin JavaScript: el menú se muestra como lista bajo el header. -->
-    <style>
-      @media (max-width: 63.99em) {
-        .site-header__bar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); }
-        .nav { flex-basis: 100%; }
-        .nav__list { display: block; position: static; padding: 0; border: 0; background: none; }
-        .nav__link { padding: var(--space-2) 0; }
-        .nav__toggle { display: none; }
-      }
-    </style>
-  </noscript>
   <script src="js/main.js" defer></script>
-  <script src="js/data/plan-estudios.data.js" defer></script>
-  <script src="js/pages/plan-estudios/plan-estudios.js" defer></script>
 </head>
-
 <body class="surface-alt">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header surface-light">
-  <div class="container site-header__bar">
-    <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
-      <span class="brand__mark" aria-hidden="true">IP</span>
-      <span class="brand__text">
-        <span class="brand__name">Colegio Privado IPSEL</span>
-        <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
-      </span>
-    </a>
-    <nav class="nav" aria-label="Navegación principal">
-      <ul class="nav__list" id="menu">
-        <li><a class="nav__link" href="index.html">Inicio</a></li>
-        <li><a class="nav__link" href="institucional.html">Institucional</a></li>
-        <li><a class="nav__link" href="plan-estudios.html" aria-current="page">Plan de Estudios</a></li>
-        <li><a class="nav__link" href="noticias.html">Noticias</a></li>
-        <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
-        <li><a class="nav__link" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="site-header__actions">
-      <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
-        <span class="visually-hidden">Menú</span><span class="nav__bars" aria-hidden="true"></span>
-      </button>
+    <div class="container site-header__bar">
+      <a class="brand" href="index.html" aria-label="Colegio Privado IPSEL – Inicio">
+        <span class="brand__mark" aria-hidden="true">IP</span>
+        <span class="brand__text">
+          <span class="brand__name">Colegio Privado IPSEL</span>
+          <span class="brand__tag">Instituto Privado Secundario Latinoamericano</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="menu">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="institucional.html">Institucional</a></li>
+          <li><a class="nav__link" href="plan-estudios.html" aria-current="page">Plan de Estudios</a></li>
+          <li><a class="nav__link" href="noticias.html">Noticias</a></li>
+          <li><a class="nav__link" href="experiencias.html">Experiencias</a></li>
+          <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary btn--sm site-header__cta" href="contacto.html#inscripciones">Inscripciones</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="visually-hidden">Menú</span>
+          <span class="nav__bars" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <main id="contenido" class="container page-layout">
     <section class="page-heading" id="oferta">
-      <aside class="tx-aviso card" role="note" data-tx="aviso">Contenido de demostración: materias, carga horaria y datos académicos de esta página son ilustrativos y no representan el plan oficial.</aside>
-      <span class="tx-oferta-eyebrow eyebrow eyebrow--line" data-tx="oferta-eyebrow">Oferta académica</span>
-      <h1 data-tx="oferta-titulo" class="tx-oferta-titulo">Bachiller en Informática</h1>
-      <p class="page-heading__subtitle" data-tx="oferta-subtitulo">Plan de estudios · 1.er a 5.º año</p>
-      <p class="tx-oferta-intro page-heading__intro" data-tx="oferta-intro">Explorá las materias, la carga horaria y los detalles de cada espacio curricular.</p>
+      <aside class="tx-aviso card" role="note">
+        Los espacios curriculares se transcriben de la documentación compartida.
+        Los códigos y las cargas horarias no están especificados en esa documentación.
+      </aside>
+
+      <span class="eyebrow eyebrow--line">Oferta académica</span>
+      <h1 class="tx-oferta-titulo">Bachiller con Orientación en Informática</h1>
+      <p class="page-heading__subtitle">Plan de estudios · 1.º a 5.º año</p>
+      <p class="page-heading__intro">
+        Explorá los espacios curriculares de cada año y consultá el detalle de cada materia.
+      </p>
+      <p class="muted">Resolución N.º 7621-E-17.</p>
     </section>
 
     <aside class="career-panel card card--elevated" aria-labelledby="career-title">
       <button class="career-panel__toggle" type="button" aria-expanded="true" aria-controls="career-content">
-        <span id="career-title" data-tx="carrera-titulo" class="tx-carrera-titulo">Información de carrera</span>
+        <span id="career-title" class="tx-carrera-titulo">Información de la orientación</span>
         <span class="career-panel__chevron" aria-hidden="true">⌃</span>
       </button>
+
       <div class="career-panel__content" id="career-content">
         <dl class="career-data">
           <div>
-            <dt data-tx="carrera-dato-carrera-titulo">Carrera</dt>
-            <dd data-tx="carrera-dato-carrera-detalle">Carrera de muestra</dd>
+            <dt>Orientación</dt>
+            <dd>Bachiller con Orientación en Informática</dd>
           </div>
           <div>
-            <dt data-tx="carrera-dato-duracion-titulo">Duración</dt>
-            <dd data-tx="carrera-dato-duracion-detalle">5 años</dd>
+            <dt>Duración</dt>
+            <dd>5 años</dd>
           </div>
           <div>
-            <dt data-tx="carrera-dato-modalidad-titulo">Modalidad</dt>
-            <dd data-tx="carrera-dato-modalidad-detalle">Presencial</dd>
+            <dt>Resolución</dt>
+            <dd>N.º 7621-E-17</dd>
           </div>
           <div>
-            <dt data-tx="carrera-dato-titulacion-titulo">Titulación</dt>
-            <dd data-tx="carrera-dato-titulacion-detalle">Titulación de ejemplo</dd>
+            <dt>Modalidad</dt>
+            <dd>No especificada en la documentación disponible</dd>
           </div>
           <div>
-            <dt data-tx="carrera-dato-cupos-titulo">Cupos</dt>
-            <dd data-tx="carrera-dato-cupos-detalle">Dato de ejemplo</dd>
+            <dt>Titulación</dt>
+            <dd>Bachiller con Orientación en Informática</dd>
           </div>
         </dl>
+
         <div class="career-objective">
-          <h2 data-tx="objetivo-titulo">Objetivo</h2>
-          <ul>
-            <li data-tx="objetivo-item-1">Formar profesionales críticos y reflexivos.</li>
-            <li data-tx="objetivo-item-2">Desarrollar competencias para la docencia e investigación.</li>
-          </ul>
+          <h2>Áreas de formación</h2>
+          <p>
+            El plan combina espacios de formación general con materias vinculadas
+            a los sistemas informáticos, la conectividad, el software, el desarrollo
+            web y la programación. Esta descripción resume las materias visibles y
+            no reemplaza los objetivos oficiales del colegio.
+          </p>
         </div>
-        <button class="btn btn--outline download-btn" type="button" id="download-plan" data-tx="descargar-plan">Descargar plan en PDF</button>
+
+        <button class="btn btn--outline download-btn" type="button" id="download-plan">
+          Descargar listado del plan
+        </button>
       </div>
     </aside>
 
     <section class="study-panel" aria-labelledby="study-title">
       <div class="study-tools">
         <label class="search-box">
-          <span class="visually-hidden" data-tx="buscador-etiqueta">Buscar materia por nombre o código</span>
+          <span class="visually-hidden">Buscar materia por nombre</span>
           <span aria-hidden="true" class="search-box__icon">⌕</span>
-          <input id="subject-search" type="search" data-tx="buscador-placeholder" data-tx-attr="placeholder"
-            placeholder="Buscar materia por nombre o código…" autocomplete="off">
-          <button class="search-box__clear" id="clear-search" type="button" data-tx="buscador-limpiar"
-            data-tx-attr="aria-label" aria-label="Limpiar búsqueda" hidden>×</button>
+          <input
+            id="subject-search"
+            type="search"
+            placeholder="Buscar materia por nombre…"
+            autocomplete="off"
+            aria-label="Buscar materia por nombre">
+          <button
+            class="search-box__clear"
+            id="clear-search"
+            type="button"
+            aria-label="Limpiar búsqueda"
+            hidden>×</button>
         </label>
+
         <label class="filter-select">
-          <span class="visually-hidden" data-tx="filtro-tipo-etiqueta">Filtrar por tipo de materia</span>
-          <select id="type-filter">
-            <option value="all" data-tx="filtro-tipo-todos">Todos los tipos</option>
-            <option value="Obligatoria" data-tx="filtro-tipo-obligatoria">Obligatoria</option>
-            <option value="Optativa" data-tx="filtro-tipo-optativa">Optativa</option>
+          <span class="visually-hidden">Elegir año</span>
+          <select id="year-filter" aria-label="Elegir año">
+            <option value="1">1.er año</option>
+            <option value="2">2.º año</option>
+            <option value="3">3.er año</option>
+            <option value="4">4.º año</option>
+            <option value="5">5.º año</option>
           </select>
         </label>
       </div>
 
-      <div class="year-tabs" role="tablist" aria-label="Año de cursado" data-tx="años-etiqueta" data-tx-attr="aria-label">
-        <!-- build:plan-anios -->
+      <div class="year-tabs" role="tablist" aria-label="Año de cursado">
         <button class="year-tab is-active" role="tab" aria-selected="true" data-year="1">1.er año</button>
         <button class="year-tab" role="tab" aria-selected="false" data-year="2" tabindex="-1">2.º año</button>
         <button class="year-tab" role="tab" aria-selected="false" data-year="3" tabindex="-1">3.er año</button>
         <button class="year-tab" role="tab" aria-selected="false" data-year="4" tabindex="-1">4.º año</button>
         <button class="year-tab" role="tab" aria-selected="false" data-year="5" tabindex="-1">5.º año</button>
-        <!-- /build:plan-anios -->
       </div>
 
       <div class="study-heading">
         <div>
-          <span class="tx-estudio-eyebrow eyebrow" data-tx="estudio-eyebrow">Plan de estudios</span>
-          <h2 id="study-title" data-tx="estudio-titulo">1.er año — Materias</h2>
+          <span class="eyebrow">Plan de estudios</span>
+          <h2 id="study-title">1.er año — Espacios curriculares</h2>
         </div>
-        <span class="subject-count" id="subject-count" data-tx="materias-count">4 materias</span>
+        <span class="subject-count" id="subject-count">11 materias</span>
       </div>
 
       <p class="results-message" id="results-message" aria-live="polite"></p>
+
       <div class="subjects-table-wrap">
         <table class="subjects-table">
           <thead>
             <tr>
-              <th scope="col" data-tx="tabla-codigo">Código</th>
-              <th scope="col" data-tx="tabla-materia">Materia</th>
-              <th scope="col" data-tx="tabla-horas">Horas</th>
-              <th scope="col" data-tx="tabla-tipo">Tipo</th>
-              <th scope="col"><span class="visually-hidden" data-tx="tabla-acciones">Acciones</span></th>
+              <th scope="col">Espacio curricular</th>
+              <th scope="col">Código</th>
+              <th scope="col">Carga horaria</th>
+              <th scope="col">Detalle</th>
             </tr>
           </thead>
           <tbody id="subjects-body"></tbody>
         </table>
       </div>
-      <div class="subject-cards" id="subject-cards" aria-label="Materias" data-tx="materias-lista-etiqueta"
-        data-tx-attr="aria-label"></div>
+
+      <div class="subject-cards" id="subject-cards" aria-label="Espacios curriculares"></div>
 
       <section class="subject-detail card" id="subject-detail" aria-labelledby="detail-title" hidden>
         <div class="subject-detail__header">
           <div>
-            <span class="tx-detalle-eyebrow eyebrow" data-tx="detalle-eyebrow">Detalle de materia seleccionada</span>
-            <h3 id="detail-title" data-tx="detalle-titulo">Matemática I</h3>
+            <span class="eyebrow">Detalle de materia seleccionada</span>
+            <h3 id="detail-title">Detalle</h3>
           </div>
-          <button type="button" class="icon-button" id="close-detail" data-tx="detalle-cerrar" data-tx-attr="aria-label"
-            aria-label="Cerrar detalle">×</button>
+          <button type="button" class="icon-button" id="close-detail" aria-label="Cerrar detalle">×</button>
         </div>
+
         <div class="detail-meta" id="detail-meta"></div>
         <p class="detail-description" id="detail-description"></p>
-        <p class="detail-prerequisites" id="detail-prerequisites"></p>
-        <button class="btn btn--outline btn--sm detail-close-btn" type="button" id="close-detail-bottom"
-          data-tx="detalle-cerrar-abajo">Cerrar detalle</button>
+        <p class="detail-prerequisites">La documentación compartida no especifica correlatividades.</p>
+
+        <button class="btn btn--outline btn--sm detail-close-btn" type="button" id="close-detail-bottom">
+          Cerrar detalle
+        </button>
       </section>
+
+      <p class="muted">
+        La documentación compartida no indica códigos ni carga horaria por materia;
+        por eso esos datos se muestran como no especificados.
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer surface-dark">
-  <div class="container">
-    <div class="site-footer__grid">
-      <div>
-        <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
-          <span class="brand__mark" aria-hidden="true">IP</span>
-          <span class="brand__text"><span class="brand__name">IPSEL</span></span>
-        </a>
-        <p class="site-footer__description">Colegio Privado IPSEL –
-          Instituto Privado Secundario Latinoamericano.</p>
-      </div>
-      <div>
-        <h2 class="footer__title">Institución</h2>
-        <ul class="footer__list">
-          <li><a href="institucional.html#historia">Historia y misión</a></li>
-          <li><a href="institucional.html#autoridades">Autoridades</a></li>
-          <li><a href="institucional.html#docentes">Plantel docente</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="footer__title">Explorar</h2>
-        <ul class="footer__list">
-          <li><a href="plan-estudios.html">Plan de Estudios</a></li>
-          <li><a href="noticias.html">Noticias</a></li>
-          <li><a href="experiencias.html">Experiencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="footer__title">Contacto</h2>
-        <ul class="footer__list">
-          <li>[Dirección real]</li>
-          <li>[Horarios de atención]</li>
-          <li>[Teléfono]</li>
-          <li>[Correo electrónico]</li>
-        </ul>
-      </div>
-    </div>
-    <div class="site-footer__bottom">
-      <span>&copy; <span data-year>2026</span> Colegio Privado IPSEL</span>
-      <span>Proyecto final desarrollado por estudiantes de [curso]</span>
-    </div>
-  </div>
-</footer>
-</body>
+  <footer class="site-footer surface-dark" id="contacto">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="IPSEL – Inicio">
+            <span class="brand__mark" aria-hidden="true">IP</span>
+            <span class="brand__text">
+              <span class="brand__name">IPSEL</span>
+            </span>
+          </a>
+          <p class="site-footer__description">
+            Colegio Privado IPSEL – Instituto Privado Secundario Latinoamericano.
+          </p>
+        </div>
 
+        <div>
+          <h2 class="footer__title">Institución</h2>
+          <ul class="footer__list">
+            <li><a href="institucional.html#historia">Historia y misión</a></li>
+            <li><a href="institucional.html#autoridades">Autoridades</a></li>
+            <li><a href="institucional.html#docentes">Plantel docente</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Explorar</h2>
+          <ul class="footer__list">
+            <li><a href="plan-estudios.html">Plan de Estudios</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Contacto</h2>
+          <ul class="footer__list">
+            <li>Consultar dirección con la institución</li>
+            <li>Consultar horarios de atención</li>
+            <li>Consultar teléfono y correo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>© <span data-current-year>2026</span> Colegio Privado IPSEL</span>
+        <span>Resolución N.º 7621-E-17</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  "use strict";
+
+  // Listas de espacios curriculares transcritas de la documentación de referencia.
+  const plan = {
+    "1": [
+      "Lengua y Literatura",
+      "Matemática",
+      "Ciencias Biológicas",
+      "Historia",
+      "Geografía",
+      "Lengua Extranjera",
+      "Educación Física",
+      "Formación Ética y Ciudadana",
+      "Tecnología",
+      "Artes Visuales",
+      "Música"
+    ],
+    "2": [
+      "Lengua y Literatura",
+      "Matemática",
+      "Ciencias Biológicas",
+      "Historia",
+      "Geografía",
+      "Lengua Extranjera",
+      "Educación Física",
+      "Formación Ética y Ciudadana",
+      "Tecnología",
+      "Teatro",
+      "Danza"
+    ],
+    "3": [
+      "Lengua y Literatura",
+      "Matemática",
+      "Ciencias Biológicas",
+      "Historia",
+      "Geografía",
+      "Lengua Extranjera",
+      "Educación Física",
+      "Construcción para la Ciudadanía",
+      "Arte",
+      "CS. Físico Química",
+      "Tecnología de los Sistemas Informáticos",
+      "Ciencia, Tecnología y Sociedad"
+    ],
+    "4": [
+      "Lengua y Literatura",
+      "Matemática",
+      "Física",
+      "Historia Política, Económica y Social de Argentina",
+      "Geografía",
+      "Lengua Extranjera",
+      "Educación Física",
+      "Sociología",
+      "Sistemas Digitales de Información",
+      "Tecnología de la Conectividad, Investigación y Desarrollo",
+      "Seguridad y Legislación en Informática"
+    ],
+    "5": [
+      "Lengua y Literatura",
+      "Matemática",
+      "Química",
+      "Taller Integrado de Ciencias Sociales y Lengua",
+      "Lengua Extranjera",
+      "Educación Física",
+      "Psicología de las Organizaciones",
+      "Tecnología del Software Libre",
+      "Diseño y Desarrollo Web",
+      "Proyecto Tecnológico en Informática",
+      "Programación"
+    ]
+  };
+
+  const names = {
+    1: "1.er año",
+    2: "2.º año",
+    3: "3.er año",
+    4: "4.º año",
+    5: "5.º año"
+  };
+
+  let current = 1;
+
+  const $ = id => document.getElementById(id);
+
+  function showDetail(name) {
+    $("subject-detail").hidden = false;
+    $("detail-title").textContent = name;
+    $("detail-description").textContent =
+      "Espacio curricular incluido en el plan de estudios compartido del IPSEL.";
+    $("detail-meta").replaceChildren();
+  }
+
+  function render() {
+    const query = $("subject-search").value.trim().toLocaleLowerCase("es");
+
+    const items = plan[current].filter(name =>
+      name.toLocaleLowerCase("es").includes(query)
+    );
+
+    $("study-title").textContent =
+      names[current] + " — Espacios curriculares";
+
+    $("subject-count").textContent =
+      items.length + " " + (items.length === 1 ? "materia" : "materias");
+
+    $("subjects-body").replaceChildren();
+    $("subject-cards").replaceChildren();
+
+    items.forEach(name => {
+      // Crear fila de la tabla.
+      const tr = document.createElement("tr");
+
+      [name, "No especificado", "No especificada"].forEach(value => {
+        const td = document.createElement("td");
+        td.textContent = value;
+        tr.appendChild(td);
+      });
+
+      const actionCell = document.createElement("td");
+      const button = document.createElement("button");
+
+      button.type = "button";
+      button.className = "btn btn--outline btn--sm";
+      button.textContent = "Ver detalle";
+      button.addEventListener("click", () => showDetail(name));
+
+      actionCell.appendChild(button);
+      tr.appendChild(actionCell);
+      $("subjects-body").appendChild(tr);
+
+      // Crear tarjeta para pantallas pequeñas.
+      const card = document.createElement("article");
+      card.className = "subject-card";
+
+      const title = document.createElement("h3");
+      title.textContent = name;
+
+      const description = document.createElement("p");
+      description.className = "muted";
+      description.textContent = "Carga horaria no especificada.";
+
+      const cardButton = document.createElement("button");
+      cardButton.type = "button";
+      cardButton.className = "btn btn--outline btn--sm";
+      cardButton.textContent = "Ver detalle";
+      cardButton.addEventListener("click", () => showDetail(name));
+
+      card.append(title, description, cardButton);
+      $("subject-cards").appendChild(card);
+    });
+
+    $("results-message").textContent = items.length
+      ? ""
+      : "No se encontraron materias con esa búsqueda.";
+
+    $("subject-detail").hidden = true;
+
+    // Sincronizar las pestañas con el año seleccionado.
+    document.querySelectorAll(".year-tab[data-year]").forEach(button => {
+      const active = Number(button.dataset.year) === current;
+
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", String(active));
+      button.tabIndex = active ? 0 : -1;
+    });
+
+    $("year-filter").value = String(current);
+    $("clear-search").hidden = $("subject-search").value.length === 0;
+  }
+
+  // Cambiar de año mediante las pestañas.
+  document.querySelectorAll(".year-tab[data-year]").forEach(button => {
+    button.addEventListener("click", () => {
+      current = Number(button.dataset.year);
+      render();
+    });
+  });
+
+  // Cambiar de año mediante el selector.
+  $("year-filter").addEventListener("change", event => {
+    current = Number(event.target.value);
+    render();
+  });
+
+  // Buscar materias por nombre, sin distinguir mayúsculas y minúsculas.
+  $("subject-search").addEventListener("input", render);
+
+  // Limpiar el campo de búsqueda.
+  $("clear-search").addEventListener("click", () => {
+    $("subject-search").value = "";
+    render();
+    $("subject-search").focus();
+  });
+
+  // Cerrar el detalle de la materia.
+  $("close-detail").addEventListener("click", () => {
+    $("subject-detail").hidden = true;
+  });
+
+  $("close-detail-bottom").addEventListener("click", () => {
+    $("subject-detail").hidden = true;
+  });
+
+  // Descargar el listado completo de los cinco años como archivo TXT.
+  $("download-plan").addEventListener("click", () => {
+    const content = [
+      "COLEGIO PRIVADO IPSEL",
+      "Bachiller con Orientación en Informática",
+      "Resolución N.º 7621-E-17",
+      "",
+      ...Object.entries(plan).flatMap(([year, items]) => [
+        names[year],
+        ...items.map(name => "- " + name),
+        ""
+      ]),
+      "Nota: no se especifican códigos ni cargas horarias en la documentación compartida."
+    ].join("\n");
+
+    const url = URL.createObjectURL(
+      new Blob([content], { type: "text/plain;charset=utf-8" })
+    );
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "plan-estudios-ipsel.txt";
+    link.click();
+
+    URL.revokeObjectURL(url);
+  });
+
+  // Permitir navegar por las pestañas con el teclado.
+  document.querySelectorAll(".year-tab[data-year]").forEach(button => {
+    button.addEventListener("keydown", event => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const next = event.key === "Home"
+        ? 1
+        : event.key === "End"
+          ? 5
+          : Math.max(
+              1,
+              Math.min(
+                5,
+                current + (event.key === "ArrowRight" ? 1 : -1)
+              )
+            );
+
+      current = next;
+      render();
+
+      document
+        .querySelector('.year-tab[data-year="' + next + '"]')
+        .focus();
+    });
+  });
+
+  // Actualizar el año del pie de página.
+  const copyrightYear = document.querySelector(
+    ".site-footer__bottom [data-current-year]"
+  );
+
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
+  }
+
+  // Abrir y cerrar el panel de información de la orientación.
+  const careerToggle = document.querySelector(".career-panel__toggle");
+
+  if (careerToggle) {
+    careerToggle.addEventListener("click", () => {
+      const expanded =
+        careerToggle.getAttribute("aria-expanded") === "true";
+
+      careerToggle.setAttribute("aria-expanded", String(!expanded));
+      $("career-content").hidden = expanded;
+    });
+  }
+
+  // Mostrar inicialmente las materias del primer año.
+  render();
+  </script>
+</body>
 </html>
